@@ -1,0 +1,49 @@
+body { transition: all .4s; }
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+.preloader .loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 45%;
+}
+.preloader .loader span {
+    height: 3rem;
+    width: 3rem;
+}
+
+.container { margin-top: 5rem; }
+
+.year .divider {
+    border: 1px solid #9493a0;
+    width: 15%;
+    margin-top: 0.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table td, .table th { border-top: none!important; }
+.table .badge { padding: .4rem; }
+
+#btn-prev-month, #btn-next-month { cursor: pointer; }
+
+footer { margin-top: 5rem; }
+footer { font-size: 0.9rem; }
+footer div {
+    font-size: 0.8rem!important;
+    text-decoration: underline;
+    margin-bottom: .2rem;
+}
+
+body[class=bg-dark] .preloader { background: #25292d!important; }
+body[class=bg-dark] { color: #fff!important; }
+body[class=bg-dark] .table { color: #e5dddd!important; }
+body[class=bg-dark] footer, body[class=bg-dark] footer div a { color: #a5abb0!important; }
